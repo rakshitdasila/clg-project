@@ -9,7 +9,8 @@
     --light-white:#fff9;
     --dark-bg:#00000090;
     --light-bg:#eee;
-    --box-shadow:3px 3px 10px black;
+    /* --box-shadow:3px 3px 10px black; */
+    --box-shadow: 0 20px 35px rgba(0,0,1,0.9);
     --text-shadow:1px 1px 3px black;
     --border:1px solid var(--black)
 }
@@ -229,7 +230,12 @@ section{
 .home-about .content{
     flex:1 1 41rem;
     padding: 3rem;
+    padding-top: 7%;
     background: var(--light-bg);
+    height: 525px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .home-about .content h3{
     font-size: 3rem;
@@ -543,6 +549,98 @@ section{
 .footer .credit span{
     color: var(--main-color);
 }
+
+
+
+
+/* register / sign in */
+.signin_body{
+    background: url(../other/image/login_bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.sign_in_container{
+    background-color: var(--light-bg);
+    width: 40vw;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,1,0.9);
+}
+.signin_form{
+    margin: 0 , 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.form-title{
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+.input-group input{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--light-black);
+    padding-left: 2.3rem;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+}
+.input-group{
+    padding: 1% 0;
+    position: relative;
+}
+.input-group i{
+    position: absolute;
+    font-size: 1.8rem;
+    margin-top: 0.4rem;
+}
+.input-group input:focus{
+    outline: transparent;
+    border-bottom:2px solid var(--main-color);
+}
+.slinks{
+    margin: 1rem;
+}
+.slinks hr{
+    height: 3px;
+    background-color: black;
+    margin: 2rem;
+}
+.slinks p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    display: inline;
+    margin: 1.2rem;
+}
+.login_page{
+    border: none;
+    background-color: transparent;
+    color: var(--main-color);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.7rem;
+}
+.recover a{
+    display: flex;
+    justify-content: right;
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+    margin-right: 0.7rem;
+    color: var(--main-color);
+}
+.hider{
+    display: none;
+}
+
+
 
 
 
